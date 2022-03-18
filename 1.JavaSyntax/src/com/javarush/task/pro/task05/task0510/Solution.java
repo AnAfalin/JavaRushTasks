@@ -4,6 +4,9 @@ package com.javarush.task.pro.task05.task0510;
 Треугольный массив
 */
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Solution {
 
     public static int[][] result = new int[10][];
