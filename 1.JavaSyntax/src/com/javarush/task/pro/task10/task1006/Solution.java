@@ -6,8 +6,8 @@ package com.javarush.task.pro.task10.task1006;
 
 public class Solution {
     public static void main(String[] args) {
-        HybridCar hybridCar = new HybridCar("HybridCar");
-        GasCar gasCar = new GasCar("GasCar");
-        ElectricCar electricCar = new ElectricCar("ElectricCar");
+        new ElectricCar();
+        new GasCar();
+        new HybridCar();
     }
 }
