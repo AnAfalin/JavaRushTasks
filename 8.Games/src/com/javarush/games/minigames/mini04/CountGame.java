@@ -23,7 +23,18 @@ public class CountGame extends Game {
     }
 
     public void showResult() {
-        //напишите тут ваш код
+        int sum = 0;
+        int countOfGreenCells = 0;
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                sum += getCellNumber(i, j);
+                if(getCellColor(i, j) == Color.GREEN) {
+                    countOfGreenCells++;
+                }
+            }
+        }
+        printSum(sum);
+        printCountOfGreenCells(countOfGreenCells);
     }
 
     private void printSum(int sum) {
