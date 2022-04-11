@@ -1,4 +1,4 @@
-package com.javarush.task.task12.task1224;
+package com.javarush.task.task12.task1223.task1224;
 
 /* 
 Неведома зверушка
