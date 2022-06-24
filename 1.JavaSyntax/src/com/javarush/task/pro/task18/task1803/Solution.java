@@ -2,6 +2,7 @@ package com.javarush.task.pro.task18.task1803;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class Solution {
     public static ArrayList<JavaRushMentor> mentors = new ArrayList<>();
@@ -19,6 +20,8 @@ public class Solution {
         );
 
         //Collections.sort(mentors, (o1, o2) -> o1.getName().length() - o2.getName().length());
+        //mentors.sort((o1, o2) -> o1.getName().length() - o2.getName().length());
+        mentors.sort(Comparator.comparingInt(o -> o.getName().length()));
 
         for (JavaRushMentor mentor : mentors) {
             System.out.println(mentor);
