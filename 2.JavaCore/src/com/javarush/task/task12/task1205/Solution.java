@@ -13,18 +13,14 @@ public class Solution {
     }
 
     public static String getObjectType(Object o) {
-        if (o instanceof Cow) {
+        if (o instanceof Cow)
             return "Корова";
-        }
-        if (o instanceof Dog) {
+
+        if (o instanceof Dog)
             return "Собака";
-        }
-        if (o instanceof Whale) {
+
+        if (o instanceof Whale)
             return "Кит";
-        }
-        if (o instanceof Pig) {
-            return "Свинья";
-        }
 
         return "Неизвестное животное";
     }
